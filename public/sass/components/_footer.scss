@@ -3,6 +3,7 @@
 }
 
 .footer {
+  display: none;
   color: $footer-link-color;
   padding: $space-md 0 $space-md 0;
   font-size: $font-size-sm;
@@ -45,7 +46,8 @@
 
 .login-page {
   .footer {
-    display: block;
+    display: none;
+    // display: block;
     bottom: $spacer;
     position: absolute;
     padding: $space-md 0 $space-md 0;
@@ -55,6 +57,7 @@
 @include media-breakpoint-up(sm) {
   .login-page {
     .footer {
+      display: none;
       padding: 70px 0 $space-md 0;
     }
   }

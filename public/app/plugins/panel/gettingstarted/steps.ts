@@ -17,7 +17,7 @@ const step2Key = `${keyPrefix}${step2TutorialTitle
 
 export const getSteps = (): SetupStep[] => [
   {
-    heading: 'Welcome to Grafana',
+    heading: 'Welcome to Observe',
     subheading: 'The steps below will guide you to quickly finish setting up your Grafana installation.',
     title: 'Basic',
     info: 'The steps below will guide you to quickly finish setting up your Grafana installation.',
@@ -28,7 +28,7 @@ export const getSteps = (): SetupStep[] => [
         heading: 'Data source and dashboards',
         title: step1TutorialTitle,
         info:
-          'Set up and understand Grafana if you have no prior experience. This tutorial guides you through the entire process and covers the “Data source” and “Dashboards” steps to the right.',
+          'Set up and understand Observe if you have no prior experience. This tutorial guides you through the entire process and covers the “Data source” and “Dashboards” steps to the right.',
         href: 'https://grafana.com/tutorials/grafana-fundamentals',
         icon: 'grafana',
         check: () => Promise.resolve(store.get(step1Key)),
@@ -40,7 +40,7 @@ export const getSteps = (): SetupStep[] => [
         title: 'Add your first data source',
         heading: 'data sources',
         icon: 'database',
-        learnHref: 'https://grafana.com/docs/grafana/latest/features/datasources/add-a-data-source',
+        // learnHref: 'https://grafana.com/docs/grafana/latest/features/datasources/add-a-data-source',
         href: 'datasources/new',
         check: () => {
           return new Promise(resolve => {
