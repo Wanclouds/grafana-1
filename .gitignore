@@ -48,7 +48,8 @@ public/css/*.min.css
 .vs/
 .eslintcache
 
-/data/*
+
+/data\plugins\grafana-toolkit\Archive\node_modules
 /bin/*
 
 # devenv
