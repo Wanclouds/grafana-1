@@ -1,6 +1,6 @@
 import React, { FC, ReactElement, useState } from 'react';
-import { Tooltip, Button, Typography, Drawer, Divider } from 'antd';
-import { PlusOutlined, PlusCircleOutlined } from '@ant-design/icons';
+import {  Drawer  } from 'antd';
+// import { PlusOutlined } from '@ant-design/icons';
 import { AddDevice } from './addNewDevice/addDevice';
 import { ListView } from './listview/listview';
 import './styles.less';
@@ -14,11 +14,11 @@ export const Device: FC<DeviceProps> = (): ReactElement => {
   return (
     <>
       <div className="listview-container">
-        <div className="titlebar">
+        {/* <div className="titlebar">
           <h1>Devices</h1>
           <Divider />
-        </div>
-        <div className="create-button">
+        </div> */}
+        {/* <div className="create-button">
           <Tooltip title='Create'>
             <span>
               <Button type="primary" onClick={toggleDrawer} className="listViewButton">
@@ -26,7 +26,7 @@ export const Device: FC<DeviceProps> = (): ReactElement => {
               </Button>
             </span>
           </Tooltip>
-        </div>
+        </div> */}
         <Drawer
           placement="right"
           width="400px"
